@@ -1,12 +1,22 @@
 [
     {
         "label": "Debug (uv - WSL)",
-        "adapter": "debugpy",
+        "adapter": "Debugpy",
         "request": "launch",
         "program": "$ZED_FILE",
-        "cwd": "$ZED_WORKTREE_ROOT",
+        "cwd": "$ZED_DIRNAME",
         "args": [],
-        "python": ".venv/bin/python",
+        "env": {
+            "PYTHONUNBUFFERED": "1"
+        }
+    },
+    {
+        "label": "Debug quickstart/agent.py (uv)",
+        "adapter": "Debugpy",
+        "request": "launch",
+        "program": "quickstart/agent.py",
+        "cwd": "$ZED_WORKTREE_ROOT/quickstart",
+        "args": [],
         "env": {
             "PYTHONUNBUFFERED": "1"
         }

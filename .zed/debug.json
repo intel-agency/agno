@@ -1,0 +1,14 @@
+[
+    {
+        "label": "Debug (uv - WSL)",
+        "adapter": "debugpy",
+        "request": "launch",
+        "program": "$ZED_FILE",
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "args": [],
+        "python": ".venv/bin/python",
+        "env": {
+            "PYTHONUNBUFFERED": "1"
+        }
+    }
+]

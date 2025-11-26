@@ -9,10 +9,10 @@ from agno.agent import Agent, RunEvent, RunOutput, RunOutputEvent
 from agno.tools.hackernews import HackerNewsTools
 from agno.utils.pprint import pprint_run_response
 
-from models import openrouter_grok4_1_fast_model
+from models import models
 
 agent = Agent(
-    model=openrouter_grok4_1_fast_model,
+    model=models["gemini_2_5_flash"],
     tools=[HackerNewsTools()],
     instructions="Write a report on the topic. Output only the report.",
     markdown=True,

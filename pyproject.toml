@@ -1,0 +1,29 @@
+[project]
+name = "agno-workspace"
+version = "0.1.0"
+description = "Agno workspace for AI agent development"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agentos>=0.2.0",
+    "agno[gemini]>=2.3.2",
+    "google>=3.0.0",
+    "google-genai>=1.52.0",
+    "mcp>=1.22.0",
+    "openai>=2.8.1",
+    "openrouter>=0.0.19",
+    "sqlalchemy>=2.0.44",
+    "uvicorn[standard]>=0.38.0",
+]
+
+[tool.pyright]
+typeCheckingMode = "recommended"
+
+[dependency-groups]
+dev = [
+    "debugpy>=1.8.17",
+]
+
+[tool.uv]
+# Allow running scripts from subdirectories
+package = false

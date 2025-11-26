@@ -1,0 +1,4 @@
+.env
+quickstart/__pycache__/agent.cpython-312.pyc
+quickstart/agent.db
+__pycache__/
